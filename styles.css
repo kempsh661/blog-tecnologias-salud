@@ -1,0 +1,43 @@
+:root {
+    --white: #fefefe;
+    --platinum: #f0f0f1;
+    --slate-grey: #6d8690;
+    --steel-blue: #6e9eb1;
+    --air-force-blue: #4991b8;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--slate-grey);
+    color: var(--white);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    line-height: 1.5;
+}
