@@ -1,5 +1,5 @@
 
-/* ================= VARIABLES ================= */
+/* VARIABLES */
 
 :root{
     --white: #FEFEFE;
@@ -10,7 +10,7 @@
     --dark-blue: #143B64;
 }
 
-/* ================= RESET ================= */
+/* RESET  */
 
 *{
     margin:0;
@@ -19,7 +19,7 @@
     font-family:'Segoe UI', sans-serif;
 }
 
-/* ================= BODY ================= */
+/*  BODY  */
 
 body{
     background:var(--white);
@@ -27,7 +27,7 @@ body{
     line-height:1.6;
 }
 
-/* ================= HEADER ================= */
+/*  HEADER  */
 
 header{
     background:white;
@@ -81,7 +81,7 @@ nav{
     color:var(--air-force-blue);
 }
 
-/* ================= MAIN ================= */
+/*  MAIN  */
 
 main{
     max-width:1200px;
@@ -89,7 +89,7 @@ main{
     padding:3rem 2rem;
 }
 
-/* ================= HERO ================= */
+/* HERO  */
 
 .hero{
     text-align:center;
@@ -108,7 +108,7 @@ main{
     font-size:1.1rem;
 }
 
-/* ================= ABOUT HERO ================= */
+/*  ABOUT HERO  */
 
 .about-hero{
     background:linear-gradient(
@@ -162,7 +162,7 @@ main{
     border-radius:20px;
 }
 
-/* ================= MISION Y VISION ================= */
+/*  MISION Y VISION  */
 
 .mission-vision{
     display:grid;
@@ -188,7 +188,7 @@ main{
     line-height:1.8;
 }
 
-/* ================= TECNOLOGIAS ================= */
+/*  TECNOLOGIAS  */
 
 .technology-section{
     display:flex;
@@ -240,7 +240,7 @@ main{
     border-radius:20px;
 }
 
-/* ================= EQUIPO ================= */
+/*  EQUIPO  */
 
 .team{
     padding:40px 8% 80px;
@@ -303,7 +303,7 @@ main{
     line-height:1.6;
 }
 
-/* ================= FOOTER ================= */
+/*  FOOTER  */
 
 footer{
     background:var(--dark-blue);
@@ -346,7 +346,7 @@ footer a:hover{
     padding-top:20px;
 }
 
-/* ================= RESPONSIVE ================= */
+/*  RESPONSIVE  */
 
 @media(max-width:900px){
 
@@ -410,4 +410,44 @@ footer a:hover{
         width:100px;
         height:100px;
     }
+}
+.fondo{
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.5),
+            rgba(255,255,255,0.5)
+        ),
+        url("../img/fondo-contacto.png");
+
+    min-height:100vh;
+}
+
+.contact_form{
+    width:460px;
+    margin:80px auto;
+    border-radius:10px;
+    padding:30px;
+    background-color:#ffffff9f;
+}
+
+.contact_form input,
+.contact_form textarea{
+    width:100%;
+    border:1px solid #000;
+    border-radius:5px;
+    padding:10px;
+}
+
+.contact_form button{
+    width:100%;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:var(--air-force-blue);
+    color:white;
+    cursor:pointer;
+}
+
+.contact_form button:hover{
+    background:var(--dark-blue);
 }
