@@ -1,0 +1,267 @@
+
+        :root{
+            --white: #FEFEFE;
+            --platinum: #F0F0F1;
+            --slate-gray: #6D8690;
+            --steel-blue: #6E9EB1;
+            --air-force-blue: #4991B8;
+            --dark-blue: #143B64;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+
+        body{
+            background:var(--white);
+        }
+
+
+
+        header{
+            background:white;
+            padding:20px 8%;
+            position:sticky;
+            top:0;
+            z-index:1000;
+            box-shadow:0 2px 10px rgba(0,0,0,.08);
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        .logo h2{
+            color:var(--dark-blue);
+        }
+
+        .logo span{
+            color:var(--slate-gray);
+            font-size:.9rem;
+        }
+
+        .menu{
+            display:flex;
+            gap:40px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:var(--dark-blue);
+            font-weight:600;
+        }
+
+        .menu a:hover{
+            color:var(--air-force-blue);
+        }
+
+
+
+        .about-hero{
+            background:linear-gradient(
+            90deg,
+            #F0F0F1 40%,
+            #E4EDF4 100%);
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:50px;
+            padding:80px 8%;
+        }
+
+        .about-content{
+            flex:1;
+        }
+
+        .about-content .subtitle{
+            color:var(--air-force-blue);
+            font-weight:bold;
+            text-transform:uppercase;
+        }
+
+        .about-content h1{
+            font-size:4rem;
+            color:var(--dark-blue);
+            margin:15px 0;
+        }
+
+        .line{
+            width:90px;
+            height:5px;
+            background:var(--air-force-blue);
+            margin-bottom:25px;
+        }
+
+        .about-content p{
+            color:#555;
+            line-height:1.8;
+            font-size:1.1rem;
+        }
+
+        .about-image{
+            flex:1;
+        }
+
+        .about-image img{
+            width:100%;
+            border-radius:20px;
+        }
+
+        /* ================= MISION Y VISION ================= */
+
+        .mission-vision{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:30px;
+            padding:70px 8%;
+        }
+
+        .card{
+            background:white;
+            padding:35px;
+            border-radius:20px;
+            box-shadow:0 5px 20px rgba(0,0,0,.08);
+        }
+
+        .card h2{
+            color:var(--dark-blue);
+            margin-bottom:15px;
+        }
+
+        .card p{
+            color:#555;
+            line-height:1.8;
+        }
+
+        /* ================= EQUIPO ================= */
+
+        .team{
+            padding:40px 8% 80px;
+            text-align:center;
+        }
+
+        .team h2{
+            color:var(--dark-blue);
+            font-size:2.5rem;
+            margin-bottom:15px;
+        }
+
+        .team-line{
+            width:90px;
+            height:5px;
+            background:var(--air-force-blue);
+            margin:auto;
+            margin-bottom:50px;
+        }
+
+        .team-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .member{
+            background:white;
+            border-radius:20px;
+            padding:25px;
+            box-shadow:0 5px 20px rgba(0,0,0,.08);
+            transition:.3s;
+        }
+
+        .member:hover{
+            transform:translateY(-8px);
+        }
+
+        .member img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .member h3{
+            color:var(--dark-blue);
+            margin-bottom:8px;
+        }
+
+        .member span{
+            color:var(--air-force-blue);
+            font-weight:bold;
+        }
+
+        .member p{
+            margin-top:15px;
+            color:#666;
+            line-height:1.6;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer{
+            background:var(--dark-blue);
+            color:white;
+            padding:50px 8%;
+        }
+
+        .footer-content{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:40px;
+        }
+
+        footer h3{
+            margin-bottom:15px;
+        }
+
+        footer ul{
+            list-style:none;
+        }
+
+        footer ul li{
+            margin-bottom:10px;
+        }
+
+        footer a{
+            color:white;
+            text-decoration:none;
+        }
+
+        .copyright{
+            text-align:center;
+            margin-top:30px;
+            border-top:1px solid rgba(255,255,255,.2);
+            padding-top:20px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:900px){
+
+            .about-hero{
+                flex-direction:column;
+            }
+
+            .about-content h1{
+                font-size:3rem;
+            }
+
+            .mission-vision{
+                grid-template-columns:1fr;
+            }
+
+            .menu{
+                gap:20px;
+            }
+        }
