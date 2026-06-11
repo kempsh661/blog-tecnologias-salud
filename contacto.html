@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Biotech en Salud</title>
+    <title>Contacto | BioTech en Salud</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
-
         <nav>
-
             <div class="logo">
-                <img src="images/generation_colombia_logo.jpg" alt="logo">
+                <img src="images/generation_colombia_logo.jpg" alt="Logo">
 
                 <div>
-                    <h2>BioTech en salud</h2>
+                    <h2>BioTech en Salud</h2>
                     <span>Tecnología que cuida vidas</span>
                 </div>
             </div>
@@ -25,149 +24,122 @@
             <div class="menu">
                 <a href="index.html">Inicio</a>
                 <a href="about.html">Quiénes Somos</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="contact.html">Contacto</a>
             </div>
-
         </nav>
-
     </header>
 
     <main>
-         <!-- Tab panes -->
-    <div class="tab-content" id="myTabContent">
-      <div
-        class="tab-pane fade show active"
-        id="home"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-      >
-        <div class="contact_form">
-          <div class="formulario">
-            <h2>Formulario de contacto</h2>
 
-            <form action="submeter-formulario.php" method="post">
-              <p>
-                <label for="nombre" class="colocar_nombre"
-                  >Nombre
-                  <span class="obligatorio">*</span>
+        <section class="contact_form">
+
+            <h2>Formulario de Contacto</h2>
+
+            <form>
+
+                <label for="nombre">
+                    Nombre <span>*</span>
                 </label>
-                <input
-                  type="text"
-                  name="introducir_nombre"
-                  id="nombre"
-                  required="obligatorio"
-                  placeholder="Escribe tu nombre"
-                />
-              </p>
 
-              <p>
-                <label for="email" class="colocar_email"
-                  >Email
-                  <span class="obligatorio">*</span>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="email">
+                    Correo electrónico <span>*</span>
                 </label>
-                <input
-                  type="email"
-                  name="introducir_email"
-                  id="email"
-                  required="obligatorio"
-                  placeholder="Escribe tu Email"
-                />
-              </p>
 
-              <p>
-                <label for="telefone" class="colocar_telefono">Teléfono </label>
                 <input
-                  type="tel"
-                  name="introducir_telefono"
-                  id="telefono"
-                  placeholder="Escribe tu teléfono"
-                />
-              </p>
+                    type="email"
+                    id="email"
+                    placeholder="Escribe tu correo"
+                    required
+                >
 
-              <p>
-                <label for="website" class="colocar_website">Sitio web </label>
-                <input
-                  type="url"
-                  name="introducir_website"
-                  id="website"
-                  placeholder="Escribe la URL de tu web"
-                />
-              </p>
-
-              <p>
-                <label for="asunto" class="colocar_asunto"
-                  >Asunto
-                  <span class="obligatorio">*</span>
+                <label for="telefono">
+                    Teléfono
                 </label>
-                <input
-                  type="text"
-                  name="introducir_asunto"
-                  id="assunto"
-                  required="obligatorio"
-                  placeholder="Escribe un asunto"
-                />
-              </p>
 
-              <p>
-                <label for="mensaje" class="colocar_mensaje"
-                  >Mensaje
-                  <span class="obligatorio">*</span>
+                <input
+                    type="tel"
+                    id="telefono"
+                    placeholder="Escribe tu teléfono"
+                >
+
+                <label for="asunto">
+                    Asunto <span>*</span>
                 </label>
+
+                <input
+                    type="text"
+                    id="asunto"
+                    placeholder="Escribe un asunto"
+                    required
+                >
+
+                <label for="mensaje">
+                    Mensaje <span>*</span>
+                </label>
+
                 <textarea
-                  name="introducir_mensaje"
-                  class="texto_mensaje"
-                  id="mensaje"
-                  required="obligatorio"
-                  placeholder="Deja aquí tu comentario..."
+                    id="mensaje"
+                    placeholder="Escribe tu mensaje..."
+                    required
                 ></textarea>
-              </p>
 
-              <button type="submit" name="enviar_formulario" id="enviar">
-                <p>Enviar</p>
-              </button>
+                <button type="submit">
+                    Enviar
+                </button>
 
-              <p class="aviso">
-                <span class="obligatorio"> * </span>los campos son obligatorios.
-              </p>
             </form>
-          </div>
-        </div>
-      </div>
+
+        </section>
+
     </main>
 
-     <footer>
+    <footer>
 
-            <div class="footer-content">
+        <div class="footer-content">
 
-                <div>
-                    <h3>BioTech Blog</h3>
+            <div>
+                <h3>BioTech Blog</h3>
 
-                    <p>
-                        Blog informativo sobre las nuevas tecnologías aplicadas al sector salud.
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Navegación</h3>
-
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="about.html">Quiénes Somos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Contacto</h3>
-
-                    <ul>
-                        <li>📧 contacto@healthtech.com</li>
-                        <li>📞 +57 300 000 0000</li>
-                        <li>📍 Colombia</li>
-                    </ul>
-                </div>
-
+                <p>
+                    Blog informativo sobre las nuevas tecnologías aplicadas al sector salud.
+                </p>
             </div>
-        </footer>
-</body>
 
+            <div>
+                <h3>Navegación</h3>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Quiénes Somos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+
+                <ul>
+                    <li>📧 contacto@biotech.com</li>
+                    <li>📞 +57 300 000 0000</li>
+                    <li>📍 Colombia</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 BioTech Blog - Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```

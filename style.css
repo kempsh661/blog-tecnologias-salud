@@ -1,6 +1,4 @@
 
-/* VARIABLES */
-
 :root{
     --white: #FEFEFE;
     --platinum: #F0F0F1;
@@ -241,6 +239,7 @@ main{
 }
 
 /*  EQUIPO  */
+
 
 .team{
     padding:40px 8% 80px;
