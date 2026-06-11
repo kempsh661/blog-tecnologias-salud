@@ -271,10 +271,10 @@
 .fondo{
     background-image: 
     linear-gradient(
-            rgba(255, 255, 255, 0.5),  /* 0.5 = 50% de transparencia */
-            rgba(255, 255, 255, 0.5)
+            rgba(255, 255, 255, 0.666),  /* 0.5 = 50% de transparencia */
+            rgba(255, 255, 255, 0.848)
         ),
-        url("img/ChatGPT\ Image\ 11\ jun\ 2026\,\ 11_49_52\ a.m.png");
+        url("images/fondocontac.png");
     
     min-height: 100vh;
 }
