@@ -13,3 +13,16 @@
     object-fit: cover;
     object-position: center center;
 }
+.bg-color-personalizado{
+    background-color: #6e9eb1;
+}
+
+.bg-color-boton{
+    background-color: #4991b8;
+    color: #f0f0f1;
+    font-weight: 500;
+}
+.bg-color-boton:hover{
+    background-color: #6d8690;
+    color: #fefefe;
+}
