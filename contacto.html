@@ -39,6 +39,11 @@
 
                 <label for="nombre">
                     Nombre <span>*</span>
+            <form id="formularioContacto" action="submeter-formulario.php" method="post">
+              <p>
+                <label for="nombre" class="colocar_nombre"
+                  >Nombre
+                  <span class="obligatorio">*</span>
                 </label>
 
                 <input
@@ -62,6 +67,14 @@
                 <label for="telefono">
                     Teléfono
                 </label>
+                <input
+                  type="text"
+                  name="introducir_asunto"
+                  id="asunto"
+                  required="obligatorio"
+                  placeholder="Escribe un asunto"
+                />
+              </p>
 
                 <input
                     type="tel"
@@ -116,6 +129,10 @@
                         Lina Gallardo Corrales<br>
                     </p>
             </div>
+        </footer>
+        <script src="app.js"></script>
+</body>
+</html>
 
             <div>
                 <h3>Navegación</h3>
