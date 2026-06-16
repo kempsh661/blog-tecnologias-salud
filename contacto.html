@@ -1,165 +1,213 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | BioTech en Salud</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/generation_colombia_logo.jpg" alt="Logo">
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                <img
+                    src="images/generation_colombia_logo.jpg"
+                    alt="Logo"
+                    width="60"
+                    class="me-3">
 
                 <div>
-                    <h2>BioTech en Salud</h2>
-                    <span>Tecnología que cuida vidas</span>
+                    <h5 class="mb-0">BioTech en Salud</h5>
+                    <small>Tecnología que cuida vidas</small>
                 </div>
-            </div>
 
-            <div class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="about.html">Quiénes Somos</a>
-                <a href="contact.html">Contacto</a>
-            </div>
-        </nav>
-    </header>
+            </a>
 
-    <main>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavbar">
 
-        <section class="contact_form">
+                <span class="navbar-toggler-icon"></span>
 
-            <h2>Formulario de Contacto</h2>
+            </button>
 
-            <form id="formularioContacto">
+            <div class="collapse navbar-collapse" id="menuNavbar">
 
-                <label for="nombre">
-                    Nombre <span>*</span>
-                </label>
+                <ul class="navbar-nav ms-auto">
 
-                <input
-                    type="text"
-                    id="nombre"
-                    placeholder="Escribe tu nombre"
-                    required
-                >
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
 
-                <label for="email">
-                    Correo electrónico <span>*</span>
-                </label>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            Quiénes Somos
+                        </a>
+                    </li>
 
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Escribe tu correo"
-                    required
-                >
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
 
-                <label for="telefono">
-                    Teléfono
-                </label>
-
-                <input
-                    type="tel"
-                    id="telefono"
-                    placeholder="Escribe tu teléfono"
-                >
-
-                <label for="website">
-                    Sitio web
-                </label>
-
-                <input
-                    type="url"
-                    id="website"
-                    placeholder="https://ejemplo.com"
-                >
-
-                <label for="asunto">
-                    Asunto <span>*</span>
-                </label>
-
-                <input
-                    type="text"
-                    id="asunto"
-                    placeholder="Escribe un asunto"
-                    required
-                >
-
-                <label for="mensaje">
-                    Mensaje <span>*</span>
-                </label>
-
-                <textarea
-                    id="mensaje"
-                    placeholder="Escribe tu mensaje..."
-                    required
-                ></textarea>
-
-                <button type="submit">
-                    Enviar
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <div class="footer-content">
-
-            <div>
-                <h3>BioTech Blog</h3>
-
-                <p>
-                    Blog informativo sobre las nuevas tecnologías aplicadas al sector salud.
-                    <br>
-                    Karen Nathalia Martinez
-                    <br>
-                    Laura Barona Saavedra
-                    <br>
-                    Elimer Rodriguez
-                    <br>
-                    Lucia C
-                    <br>
-                    Lina Gallardo Corrales
-                </p>
-            </div>
-
-            <div>
-                <h3>Navegación</h3>
-
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="about.html">Quiénes Somos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
                 </ul>
-            </div>
 
-            <div>
-                <h3>Contacto</h3>
-
-                <ul>
-                    <li>📧 contacto@biotech.com</li>
-                    <li>📞 +57 300 000 0000</li>
-                    <li>📍 Colombia</li>
-                </ul>
             </div>
 
         </div>
 
-        <div class="copyright">
-            © 2026 BioTech Blog - Todos los derechos reservados.
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="contact_form">
+
+        <h2>Formulario de Contacto</h2>
+
+        <form id="formularioContacto">
+
+            <label for="nombre">
+                Nombre <span>*</span>
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                required
+            >
+
+            <label for="email">
+                Correo electrónico <span>*</span>
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Escribe tu correo"
+                required
+            >
+
+            <label for="telefono">
+                Teléfono
+            </label>
+
+            <input
+                type="tel"
+                id="telefono"
+                placeholder="Escribe tu teléfono"
+            >
+
+            <label for="website">
+                Sitio web
+            </label>
+
+            <input
+                type="url"
+                id="website"
+                placeholder="https://ejemplo.com"
+            >
+
+            <label for="asunto">
+                Asunto <span>*</span>
+            </label>
+
+            <input
+                type="text"
+                id="asunto"
+                placeholder="Escribe un asunto"
+                required
+            >
+
+            <label for="mensaje">
+                Mensaje <span>*</span>
+            </label>
+
+            <textarea
+                id="mensaje"
+                placeholder="Escribe tu mensaje..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>BioTech Blog</h3>
+
+            <p>
+                Blog informativo sobre las nuevas tecnologías aplicadas al sector salud.
+                <br>
+                Karen Nathalia Martinez
+                <br>
+                Laura Barona Saavedra
+                <br>
+                Elimer Rodriguez
+                <br>
+                Lucia C
+                <br>
+                Lina Gallardo Corrales
+            </p>
         </div>
 
-    </footer>
+        <div>
+            <h3>Navegación</h3>
 
-    <script src="app.js"></script>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+
+            <ul>
+                <li>📧 contacto@biotech.com</li>
+                <li>📞 +57 300 000 0000</li>
+                <li>📍 Colombia</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 BioTech Blog - Todos los derechos reservados.
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
