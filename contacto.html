@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,15 +34,10 @@
 
             <h2>Formulario de Contacto</h2>
 
-            <form>
+            <form id="formularioContacto">
 
                 <label for="nombre">
                     Nombre <span>*</span>
-            <form id="formularioContacto" action="submeter-formulario.php" method="post">
-              <p>
-                <label for="nombre" class="colocar_nombre"
-                  >Nombre
-                  <span class="obligatorio">*</span>
                 </label>
 
                 <input
@@ -67,19 +61,21 @@
                 <label for="telefono">
                     Teléfono
                 </label>
-                <input
-                  type="text"
-                  name="introducir_asunto"
-                  id="asunto"
-                  required="obligatorio"
-                  placeholder="Escribe un asunto"
-                />
-              </p>
 
                 <input
                     type="tel"
                     id="telefono"
                     placeholder="Escribe tu teléfono"
+                >
+
+                <label for="website">
+                    Sitio web
+                </label>
+
+                <input
+                    type="url"
+                    id="website"
+                    placeholder="https://ejemplo.com"
                 >
 
                 <label for="asunto">
@@ -120,19 +116,20 @@
             <div>
                 <h3>BioTech Blog</h3>
 
-                 <p>
-                        Blog informativo sobre las nuevas tecnologías aplicadas al sector salud.
-                        Karen Nathalia Martinez<br>
-                        Laura Barona Saavedra<br>
-                        Elimer Rodriguez<br>
-                        Lucia C<br>
-                        Lina Gallardo Corrales<br>
-                    </p>
+                <p>
+                    Blog informativo sobre las nuevas tecnologías aplicadas al sector salud.
+                    <br>
+                    Karen Nathalia Martinez
+                    <br>
+                    Laura Barona Saavedra
+                    <br>
+                    Elimer Rodriguez
+                    <br>
+                    Lucia C
+                    <br>
+                    Lina Gallardo Corrales
+                </p>
             </div>
-        </footer>
-        <script src="app.js"></script>
-</body>
-</html>
 
             <div>
                 <h3>Navegación</h3>
@@ -162,6 +159,8 @@
 
     </footer>
 
+    <script src="app.js"></script>
+
 </body>
 </html>
-```
+
